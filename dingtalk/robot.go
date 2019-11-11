@@ -19,9 +19,9 @@ type Robot struct {
 }
 
 type Option struct {
-	AccessToken    string
-	SecretKey      string
-	RequestTimeout *time.Duration
+	AccessToken    string         `json:"accessToken"`
+	SecretKey      string         `json:"secretKey"`
+	RequestTimeout *time.Duration `json:"requestTimeout"`
 }
 
 func NewRobot(option *Option) *Robot {
